@@ -1,7 +1,0 @@
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\bin\Debug\MFulopSjANApeerProgrammingClasses.exe
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\bin\Debug\MFulopSjANApeerProgrammingClasses.pdb
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.Form1.resources
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.Properties.Resources.resources
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.csproj.GenerateResource.Cache
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.exe
-\\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.pdb
