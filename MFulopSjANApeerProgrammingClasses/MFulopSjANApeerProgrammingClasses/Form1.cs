@@ -25,7 +25,6 @@ namespace MFulopSjANApeerProgrammingClasses
             healButton.Visible = false;
         }
         
-        
         Player p = new Player();
         Random randy = new Random();
         private void attack_Click(object sender, EventArgs e)
@@ -39,7 +38,7 @@ namespace MFulopSjANApeerProgrammingClasses
             // weapon1.minDamage, weapon1.minDamage
             // weapon2.minDamage, ...
             // myWeapon.min, myWeapon.max
-            p.Attack = randy.Next( (int)currentWeapon.MinDamage, (int)currentWeapon.MaxDamage);
+            p.Attack = randy.Next( (int)currentWeapon.MinDamage, (int)currentWeapon.MaxDamage) + (p.Level*5);
             // let the player attack first
             myMonster.Health = myMonster.Health - p.Attack;
             // check if the monster is dead
@@ -47,8 +46,13 @@ namespace MFulopSjANApeerProgrammingClasses
             {
                 MessageBox.Show("You are winner!");
                 // reset player health
+                p.Health = 100;
+                p.Level++;
+                p.Mana = 2+p.Level;
+
                 // level++
-                /// myMonster = new stats
+                /// myMonster = new stats]
+                myMonster = new Monster("Bingo Jackass",125+(p.Level*4), 1);
                 /// // update the labels
             }
             else
