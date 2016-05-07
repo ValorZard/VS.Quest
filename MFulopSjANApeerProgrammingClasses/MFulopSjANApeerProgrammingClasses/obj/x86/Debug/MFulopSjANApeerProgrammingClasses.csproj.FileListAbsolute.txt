@@ -5,3 +5,11 @@
 \\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.csproj.GenerateResource.Cache
 \\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.exe
 \\mvhs-fs\students\mv.mfulop\visual studio 2010\Projects\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.pdb
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.exe
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.pdb
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.csprojResolveAssemblyReference.cache
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.Form1.resources
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.Properties.Resources.resources
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\obj\x86\Debug\MFulopSjANApeerProgrammingClasses.csproj.GenerateResource.Cache
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\bin\Debug\MFulopSjANApeerProgrammingClasses.exe
+C:\Users\srimanta\Desktop\VS.Quest\MFulopSjANApeerProgrammingClasses\MFulopSjANApeerProgrammingClasses\bin\Debug\MFulopSjANApeerProgrammingClasses.pdb

@@ -24,10 +24,9 @@ namespace MFulopSjANApeerProgrammingClasses
             fireBallButton.Visible = false;
             healButton.Visible = false;
         }
-
-        double playerHealth = 100;
-        double playerAttack;
-        double playerMana = 3;
+        
+        
+        Player p = new Player();
         Random randy = new Random();
         private void attack_Click(object sender, EventArgs e)
         {
@@ -36,13 +35,13 @@ namespace MFulopSjANApeerProgrammingClasses
             MessageBox.Show(myMonster.IsAlive.ToString());
              */
             // xp for mana points
-            playerMana = playerMana + 1 + currentWeapon.ManaRegen;
+            p.Mana = p.Mana + 1 + currentWeapon.ManaRegen;
             // weapon1.minDamage, weapon1.minDamage
             // weapon2.minDamage, ...
             // myWeapon.min, myWeapon.max
-            playerAttack = randy.Next( (int)currentWeapon.MinDamage, (int)currentWeapon.MaxDamage);
+            p.Attack = randy.Next( (int)currentWeapon.MinDamage, (int)currentWeapon.MaxDamage);
             // let the player attack first
-            myMonster.Health = myMonster.Health - playerAttack;
+            myMonster.Health = myMonster.Health - p.Attack;
             // check if the monster is dead
             if (myMonster.IsAlive == false)
             {
@@ -55,8 +54,8 @@ namespace MFulopSjANApeerProgrammingClasses
             else
             {
                 // let monster attack player
-                playerHealth = myMonster.attack(playerHealth);
-                if (playerHealth < 1)
+                p.Health = myMonster.attack(p.Health);
+                if (p.Health < 1)
                 {
                     MessageBox.Show("You are loser!");
                     this.Close();
@@ -68,14 +67,14 @@ namespace MFulopSjANApeerProgrammingClasses
             mMana.Text = myMonster.Mana.ToString();
             enemyDamage.Text = "You've taken: " + myMonster.MonsterAttack;
             // player stasz
-            pHealth.Text = playerHealth.ToString();
-            pMana.Text = playerMana.ToString();
-            playerDamage.Text = "You dealt: " + playerAttack.ToString();
+            pHealth.Text = p.Health.ToString();
+            pMana.Text = p.Mana.ToString();
+            playerDamage.Text = "You dealt: " + p.Attack.ToString();
         }
 
         private void spellButton_Click(object sender, EventArgs e)
         {
-            if (playerMana < 3)
+            if (p.Mana < 3)
             {
                 MessageBox.Show("Not Enough Mana");
             }
@@ -94,8 +93,8 @@ namespace MFulopSjANApeerProgrammingClasses
             mMana.Text = myMonster.Mana.ToString();
             monsterName.Text = myMonster.MonsterType;
             // player stasz
-            pHealth.Text = playerHealth.ToString();
-            pMana.Text = playerMana.ToString();
+            pHealth.Text = p.Health.ToString();
+            pMana.Text = p.Mana.ToString();
             // check button
             crowbarButton.Checked = true;
             playerDamage.Text = "You dealt: 0";
@@ -104,8 +103,8 @@ namespace MFulopSjANApeerProgrammingClasses
 
         private void healButton_Click(object sender, EventArgs e)
         {
-            playerHealth = playerHealth + 60;
-            playerMana = playerMana - 3;
+            p.Health = p.Health + 60;
+            p.Mana = p.Mana - 3;
             resetButtons();
             if (myMonster.IsAlive == false)
             {
@@ -114,10 +113,10 @@ namespace MFulopSjANApeerProgrammingClasses
             else
             {
                 // let monster attack player
-                playerHealth = myMonster.attack(playerHealth);
+                p.Health = myMonster.attack(p.Health);
                 playerDamage.Text = "You dealt: 0";
                 enemyDamage.Text = "You've taken: " + myMonster.MonsterAttack;
-                if (playerHealth < 1)
+                if (p.Health < 1)
                 {
                     MessageBox.Show("You are loser!");
                     this.Close();
@@ -130,7 +129,7 @@ namespace MFulopSjANApeerProgrammingClasses
             double fireBallDamage = randy.Next(1, 100);
             myMonster.Health = myMonster.Health - fireBallDamage;
             // remove mana
-            playerMana = playerMana - 3;
+            p.Mana = p.Mana - 3;
             /// reset everything
             resetButtons(); 
             if (myMonster.IsAlive == false)
@@ -143,8 +142,8 @@ namespace MFulopSjANApeerProgrammingClasses
                 enemyDamage.Text = "You've taken: " + myMonster.MonsterAttack;
                 playerDamage.Text = "You dealt: " + fireBallDamage.ToString();
                 // let monster attack player
-                playerHealth = myMonster.attack(playerHealth);
-                if (playerHealth < 1)
+                p.Health = myMonster.attack(p.Health);
+                if (p.Health < 1)
                 {
                     MessageBox.Show("You are loser!");
                     this.Close();
@@ -170,8 +169,8 @@ namespace MFulopSjANApeerProgrammingClasses
             mHealth.Text = myMonster.Health.ToString();
             mMana.Text = myMonster.Mana.ToString();
             // player stasz
-            pHealth.Text = playerHealth.ToString();
-            pMana.Text = playerMana.ToString();
+            pHealth.Text = p.Health.ToString();
+            pMana.Text = p.Mana.ToString();
 
         }
 
